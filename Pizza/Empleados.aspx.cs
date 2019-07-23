@@ -1,4 +1,7 @@
 ﻿using System;
+using Pizza.Dal;
+using Pizza.Ef;
+using Pizza.ServiceDal;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
@@ -11,7 +14,8 @@ namespace Pizza
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-
+            GridView1.DataSource = EmpleadosDal.ListarPorNombre();
+            GridView1.DataBind();
         }
     }
 }
