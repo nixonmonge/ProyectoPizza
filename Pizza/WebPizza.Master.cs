@@ -13,5 +13,23 @@ namespace Pizza
         {
 
         }
+
+        protected void ButtonIngresoOrden_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("IngresoOrden.aspx");
+        }
+        protected void ButtonEmpleados_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("Empleados.aspx");
+        }
+        protected void ButtonClientes_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("Clientes.aspx");
+        }
+        protected void ButtonSalir_Click(object sender, EventArgs e)
+        {
+            Session.Abandon();
+            Response.Redirect("default.aspx");
+        }
     }
 }

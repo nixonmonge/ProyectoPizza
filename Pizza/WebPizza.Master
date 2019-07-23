@@ -56,16 +56,16 @@
                 <div class="sidebar-sticky">
                     <ul class="nav flex-column">
                         <li class="nav-item"> 
-                            <asp:Button ID="ButtonIngresoOrden" runat="server" Text="Ingreso de orden" CssClass="btn btn-secondary btn-lg btn-block" />
+                            <asp:Button ID="ButtonIngresoOrden" runat="server" Text="Ingreso de orden" CssClass="btn btn-secondary btn-lg btn-block" OnClick="ButtonIngresoOrden_Click"/>
                        </li><br />
                         <li class="nav-item">
-                            <asp:Button ID="ButtonEmpleados" runat="server" Text="Empleados" CssClass="btn btn-secondary btn-lg btn-block" />
+                            <asp:Button ID="ButtonEmpleados" runat="server" Text="Empleados" CssClass="btn btn-secondary btn-lg btn-block" OnClick="ButtonEmpleados_Click" />
                         </li><br />
                         <li class="nav-item">
-                            <asp:Button ID="ButtonClientes" runat="server" Text="Clientes" CssClass="btn btn-secondary btn-lg btn-block" />
+                            <asp:Button ID="ButtonClientes" runat="server" Text="Clientes" CssClass="btn btn-secondary btn-lg btn-block" OnClick="ButtonClientes_Click"/>
                         </li><br />
                         <li class="nav-item">
-                            <asp:Button ID="ButtonSalir" runat="server" Text="Salir" CssClass="btn btn-secondary btn-lg btn-block" />
+                            <asp:Button ID="ButtonSalir" runat="server" Text="Salir" CssClass="btn btn-secondary btn-lg btn-block" OnClick="ButtonSalir_Click"/>
                         </li><br /><br />
                         
                         <li class="nav-item">
