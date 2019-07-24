@@ -1,4 +1,6 @@
-﻿using System;
+﻿using Pizza.ServiceDal;
+using Pizza.Dal;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
@@ -12,6 +14,16 @@ namespace Pizza
         protected void Page_Load(object sender, EventArgs e)
         {
 
+        }
+
+        protected void Button1_Click(object sender, EventArgs e)
+        {
+            var nuevoCliente = ClientesServicio.Factory(TextBoxRutCliente, TextBoxNombreCliente,TextBoxTelefonoCliente, TextBoxDireccionCliente);
+            ClientesDal.Insertar(nuevoCliente);
+            TextBoxRutCliente.Text = "";
+            TextBoxNombreCliente.Text = "";
+            TextBoxTelefonoCliente.Text = "";
+            TextBoxDireccionCliente.Text = "";
         }
     }
 }

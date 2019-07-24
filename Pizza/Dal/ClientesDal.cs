@@ -19,5 +19,13 @@ namespace Pizza.Dal
             }
             return listado;
         }
+        public static void Insertar(Clientes cliente)
+        {
+            using (var nuevoCliente = new Model1())
+            {
+                nuevoCliente.Clientes.Add(cliente);
+                nuevoCliente.SaveChanges();
+            }
+        }
     }
 }
