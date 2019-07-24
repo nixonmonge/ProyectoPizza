@@ -65,6 +65,9 @@
                             <asp:Button ID="ButtonClientes" runat="server" Text="Clientes" CssClass="btn btn-secondary btn-lg btn-block" OnClick="ButtonClientes_Click"/>
                         </li><br />
                         <li class="nav-item">
+                            <asp:Button ID="ButtonPizzas" runat="server" Text="Pizzas" CssClass="btn btn-secondary btn-lg btn-block" OnClick="ButtonPizzas_Click"/>
+                        </li><br />
+                        <li class="nav-item">
                             <asp:Button ID="ButtonSalir" runat="server" Text="Salir" CssClass="btn btn-secondary btn-lg btn-block" OnClick="ButtonSalir_Click"/>
                         </li><br /><br />
                         

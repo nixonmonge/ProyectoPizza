@@ -26,6 +26,10 @@ namespace Pizza
         {
             Response.Redirect("WebClientes.aspx");
         }
+        protected void ButtonPizzas_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("WebPizzas.aspx");
+        }
         protected void ButtonSalir_Click(object sender, EventArgs e)
         {
             Session.Abandon();

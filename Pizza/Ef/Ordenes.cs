@@ -21,5 +21,11 @@ namespace Pizza.Ef
 
         [StringLength(50)]
         public string RutCliente { get; set; }
+
+        public virtual Clientes Clientes { get; set; }
+
+        public virtual Empleados Empleados { get; set; }
+
+        public virtual Pizzas Pizzas { get; set; }
     }
 }

@@ -8,6 +8,12 @@ namespace Pizza.Ef
 
     public partial class Pizzas
     {
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
+        public Pizzas()
+        {
+            Ordenes = new HashSet<Ordenes>();
+        }
+
         [Key]
         public int IdPizza { get; set; }
 
@@ -18,5 +24,8 @@ namespace Pizza.Ef
 
         [StringLength(50)]
         public string Imagen { get; set; }
+
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
+        public virtual ICollection<Ordenes> Ordenes { get; set; }
     }
 }

@@ -122,10 +122,12 @@
     <Content Include="IngresoCliente.aspx" />
     <Content Include="IngresoOrden.aspx" />
     <Content Include="Web.config" />
+    <Content Include="WebPizzas.aspx" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Dal\ClientesDal.cs" />
     <Compile Include="Dal\EmpleadosDal.cs" />
+    <Compile Include="Dal\PizzasDal.cs" />
     <Compile Include="default.aspx.cs">
       <DependentUpon>default.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -165,6 +167,7 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="ServiceDal\ClientesServicio.cs" />
     <Compile Include="ServiceDal\EmpleadosServicio.cs" />
+    <Compile Include="ServiceDal\PizzasServicio.cs" />
     <Compile Include="WebClientes.aspx.cs">
       <DependentUpon>WebClientes.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -185,6 +188,13 @@
     </Compile>
     <Compile Include="WebPizza.Master.designer.cs">
       <DependentUpon>WebPizza.Master</DependentUpon>
+    </Compile>
+    <Compile Include="WebPizzas.aspx.cs">
+      <DependentUpon>WebPizzas.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebPizzas.aspx.designer.cs">
+      <DependentUpon>WebPizzas.aspx</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>
