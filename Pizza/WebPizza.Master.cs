@@ -20,11 +20,11 @@ namespace Pizza
         }
         protected void ButtonEmpleados_Click(object sender, EventArgs e)
         {
-            Response.Redirect("Empleados.aspx");
+            Response.Redirect("WebEmpleados.aspx");
         }
         protected void ButtonClientes_Click(object sender, EventArgs e)
         {
-            Response.Redirect("Clientes.aspx");
+            Response.Redirect("WebClientes.aspx");
         }
         protected void ButtonSalir_Click(object sender, EventArgs e)
         {

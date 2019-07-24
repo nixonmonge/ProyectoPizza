@@ -10,16 +10,16 @@
 namespace Pizza {
     
     
-    public partial class Empleados {
+    public partial class WebClientes {
         
         /// <summary>
-        /// LabelEmpleados control.
+        /// LabelClientes control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label LabelEmpleados;
+        protected global::System.Web.UI.WebControls.Label LabelClientes;
         
         /// <summary>
         /// GridView1 control.
@@ -29,5 +29,14 @@ namespace Pizza {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.GridView GridView1;
+        
+        /// <summary>
+        /// Button1 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button Button1;
     }
 }

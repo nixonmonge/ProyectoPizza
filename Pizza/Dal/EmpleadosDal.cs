@@ -8,16 +8,16 @@ namespace Pizza.Dal
 {
     public class EmpleadosDal
     {
-        public static List<Empleados> ListarPorNombre()
+        public static List<Empleados> ListarTodo()
         {
-            var lista = new List<Empleados>();
-            using (var grupo = new Model1())
+            var listado = new List<Empleados>();
+            using (var modelo = new Model1())
             {
-                var types = grupo.Empleados
-                    .OrderBy(ct => ct.Usuario)
+                    listado = modelo.Empleados                    
+                    .OrderBy(e => e.Usuario)
                     .ToList();
             }
-            return lista;
+            return listado;
         }
     }
 }
