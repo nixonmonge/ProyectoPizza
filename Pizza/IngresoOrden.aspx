@@ -5,7 +5,7 @@
     <br />
      <h4><asp:Label ID="Label1" runat="server" Text="Ingreso de Orden"></asp:Label></h4><br />
      <h5><asp:Label ID="Label2" runat="server" Text="Pizza :"></asp:Label><br />
-     <asp:DropDownList ID="DropDownList1" runat="server" CssClass="btn btn-secondary btn-sm dropdown-toggle col-md-3"></asp:DropDownList></h5><br />
+     <asp:DropDownList ID="DropDownListPizza" runat="server" CssClass="btn btn-secondary btn-sm dropdown-toggle col-md-3"></asp:DropDownList></h5><br />
      <h5><asp:Label ID="Label3" runat="server" Text="Cliente :"></asp:Label><br />
      <asp:DropDownList ID="DropDownList2" runat="server" CssClass="btn btn-secondary btn-sm dropdown-toggle col-md-3"></asp:DropDownList></h5><br />
      <h5><asp:Label ID="Label4" runat="server" Text="Cantidad :"></asp:Label><br />

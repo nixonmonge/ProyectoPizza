@@ -12,7 +12,7 @@ namespace Pizza
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            GridView1.DataSource = PizzasDal.ListarClientes();
+            GridView1.DataSource = PizzasDal.ListarPizzas();
             GridView1.DataBind();
         }
     }

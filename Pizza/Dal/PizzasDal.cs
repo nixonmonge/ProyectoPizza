@@ -8,7 +8,7 @@ namespace Pizza.Dal
 {
     public class PizzasDal
     {
-        public static List<Pizzas> ListarClientes()
+        public static List<Pizzas> ListarPizzas()
         {
             var listadoPizzas = new List<Pizzas>();
             using (var modelo = new Model1())
