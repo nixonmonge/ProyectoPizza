@@ -21,15 +21,7 @@ namespace Pizza
 
         protected void Button1_Click(object sender, EventArgs e)
         {
-            if (!IsPostBack)
-            {
-                var nuevoOrden = OrdenesServicio.Factory(DropDownListPizza, DropDownListClientes, TextBoxCantidad);
-                ClientesDal.Insertar(nuevoOrden);
-                DropDownListPizza.SelectedValue = "";
-                TextBoxNombreCliente.Text = "";
-                TextBoxTelefonoCliente.Text = "";
-                TextBoxDireccionCliente.Text = "";
-            }            
+            
         }
     }
 }
