@@ -10,16 +10,16 @@
 namespace Pizza {
     
     
-    public partial class IngresoOrden {
+    public partial class IngresoPizza {
         
         /// <summary>
-        /// Label1 control.
+        /// LabelIngresoPizza control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label Label1;
+        protected global::System.Web.UI.WebControls.Label LabelIngresoPizza;
         
         /// <summary>
         /// Label2 control.
@@ -31,13 +31,13 @@ namespace Pizza {
         protected global::System.Web.UI.WebControls.Label Label2;
         
         /// <summary>
-        /// DropDownListPizza control.
+        /// TextBoxTitulo control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.DropDownList DropDownListPizza;
+        protected global::System.Web.UI.WebControls.TextBox TextBoxTitulo;
         
         /// <summary>
         /// Label3 control.
@@ -49,31 +49,31 @@ namespace Pizza {
         protected global::System.Web.UI.WebControls.Label Label3;
         
         /// <summary>
-        /// DropDownListClientes control.
+        /// TextBoxPrecio control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.DropDownList DropDownListClientes;
+        protected global::System.Web.UI.WebControls.TextBox TextBoxPrecio;
         
         /// <summary>
-        /// Label4 control.
+        /// Label1 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label Label4;
+        protected global::System.Web.UI.WebControls.Label Label1;
         
         /// <summary>
-        /// TextBoxCantidad control.
+        /// TextBoxImagen control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox TextBoxCantidad;
+        protected global::System.Web.UI.WebControls.TextBox TextBoxImagen;
         
         /// <summary>
         /// Button1 control.

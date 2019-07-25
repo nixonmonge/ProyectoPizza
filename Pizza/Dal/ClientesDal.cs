@@ -19,6 +19,20 @@ namespace Pizza.Dal
             }
             return listado;
         }
+                public static List<Clientes> ListaClientesOrdenes()
+        {
+            using(var grupo=new Model1())
+            {
+                var types=grupo.Clientes
+                    .OrderBy( ct => ct.Nombre)
+                    .ToList();
+                Clientes vacio =new Clientes();
+                vacio.RutCliente="0";
+                vacio.Nombre="Seleccione un Cliente";
+                types.Insert(0,vacio); // inserto al comienzo
+                return types;
+            }
+        }
         public static void Insertar(Clientes cliente)
         {
             using (var nuevoCliente = new Model1())

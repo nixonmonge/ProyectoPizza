@@ -9,17 +9,20 @@ using System.Web.UI.WebControls;
 
 namespace Pizza
 {
-    public partial class WebPizzas : System.Web.UI.Page
+    public partial class IngresoPizza : System.Web.UI.Page
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            GridView1.DataSource = PizzasDal.ListarPizzas();
-            GridView1.DataBind();
-        }
 
+        }
         protected void Button1_Click(object sender, EventArgs e)
         {
-            Response.Redirect("IngresoPizza.aspx");
+            var nuevaPizza = PizzasServicio.Factory(TextBoxTitulo, TextBoxPrecio, TextBoxImagen);
+            PizzasDal.Insertar(nuevaPizza);
+            TextBoxTitulo.Text = "";
+            TextBoxPrecio.Text = "";
+            TextBoxImagen.Text = "";
+
         }
     }
 }

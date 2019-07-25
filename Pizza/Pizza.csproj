@@ -121,6 +121,7 @@
     <Content Include="Index.aspx" />
     <Content Include="IngresoCliente.aspx" />
     <Content Include="IngresoOrden.aspx" />
+    <Content Include="IngresoPizza.aspx" />
     <Content Include="Web.config" />
     <Content Include="WebPizzas.aspx" />
   </ItemGroup>
@@ -164,6 +165,13 @@
     </Compile>
     <Compile Include="IngresoOrden.aspx.designer.cs">
       <DependentUpon>IngresoOrden.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="IngresoPizza.aspx.cs">
+      <DependentUpon>IngresoPizza.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="IngresoPizza.aspx.designer.cs">
+      <DependentUpon>IngresoPizza.aspx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="ServiceDal\ClientesServicio.cs" />

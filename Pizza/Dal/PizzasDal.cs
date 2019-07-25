@@ -19,5 +19,27 @@ namespace Pizza.Dal
             }
             return listadoPizzas;
         }
+        public static List<Pizzas> ListaPizzasOrdenes()
+        {
+            using (var grupo = new Model1())
+            {
+                var types = grupo.Pizzas
+                    .OrderBy(ct => ct.Titulo)
+                    .ToList();
+                Pizzas vacio = new Pizzas();
+                vacio.IdPizza =0;
+                vacio.Titulo = "Seleccione una Pizza";
+                types.Insert(0, vacio); // inserto al comienzo
+                return types;
+            }
+        }
+        public static void Insertar(Pizzas pizza)
+        {
+            using (var nuevaPizza = new Model1())
+            {
+                nuevaPizza.Pizzas.Add(pizza);
+                nuevaPizza.SaveChanges();
+            }
+        }
     }  
 }
