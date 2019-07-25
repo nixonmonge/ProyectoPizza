@@ -21,12 +21,15 @@ namespace Pizza
 
         protected void Button1_Click(object sender, EventArgs e)
         {
-            /*var nuevaOrden = OrdenesServicio.Factory(DropDownListPizza, DropDownListClientes, TextBoxCantidad);
-            OrdenesDal.Insertar(nuevaOrden);
-            DropDownListPizza.Text = "";
-            DropDownListClientes.Text = "";
-            TextBoxCantidad.Text = "";*/
-            
+            if (!IsPostBack)
+            {
+                var nuevoOrden = OrdenesServicio.Factory(DropDownListPizza, DropDownListClientes, TextBoxCantidad);
+                ClientesDal.Insertar(nuevoOrden);
+                DropDownListPizza.SelectedValue = "";
+                TextBoxNombreCliente.Text = "";
+                TextBoxTelefonoCliente.Text = "";
+                TextBoxDireccionCliente.Text = "";
+            }            
         }
     }
 }
