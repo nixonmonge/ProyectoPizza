@@ -48,7 +48,7 @@
             <asp:TextBox ID="TxtClave" runat="server" CssClass="form-control" placeholder="Clave"   MaxLength="50" TextMode="Password"></asp:TextBox>
 
 
-      <asp:Button ID="ButtonLogin" runat="server" CssClass="btn btn-lg btn-primary btn-block" Text="Ingresar" />
+      <asp:Button ID="ButtonLogin" runat="server" CssClass="btn btn-lg btn-primary btn-block" Text="Ingresar" OnClick="ButtonLogin_Click" />
           
             <p class="mt-5 mb-3 text-muted">&copy; 2019</p>
 

@@ -22,6 +22,13 @@ namespace Pizza
         protected void Button1_Click(object sender, EventArgs e)
         {
             
+                var nuevoOrden = OrdenesServicio.Factory(DropDownListPizza, DropDownListClientes, TextBoxCantidad);
+
+                nuevoOrden.IdPizza = Convert.ToInt32(DropDownListPizza.SelectedValue);
+                nuevoOrden.RutCliente= DropDownListClientes.Text;
+                nuevoOrden.Cantidad = Convert.ToInt32(TextBoxCantidad.Text);
+            OrdenesDal.Insertar(nuevoOrden);                   
+                                     
         }
     }
 }

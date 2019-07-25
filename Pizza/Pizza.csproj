@@ -70,6 +70,9 @@
     <Reference Include="GitHub, Version=1.14.1.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\packages\GitHub.1.14.1\lib\netstandard2.0\GitHub.dll</HintPath>
     </Reference>
+    <Reference Include="itextsharp, Version=5.5.13.1, Culture=neutral, PublicKeyToken=8354ae6d2174ddca, processorArchitecture=MSIL">
+      <HintPath>..\packages\iTextSharp.5.5.13.1\lib\itextsharp.dll</HintPath>
+    </Reference>
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="System.Buffers, Version=4.0.2.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
       <HintPath>..\packages\System.Buffers.4.4.0\lib\netstandard2.0\System.Buffers.dll</HintPath>
@@ -178,6 +181,7 @@
     <Compile Include="ServiceDal\EmpleadosServicio.cs" />
     <Compile Include="ServiceDal\OrdenesServicio.cs" />
     <Compile Include="ServiceDal\PizzasServicio.cs" />
+    <Compile Include="ServiceDal\Util.cs" />
     <Compile Include="WebClientes.aspx.cs">
       <DependentUpon>WebClientes.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
