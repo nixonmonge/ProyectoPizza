@@ -24,7 +24,7 @@ namespace Pizza.Dal
             using (var modelo = new Model1())
             {
                 listado = modelo.Ordenes
-                .OrderBy(e => e.Fecha).Include("Pizzas").Include("Clientes")
+                .OrderByDescending(e => e.Fecha ).Include("Pizzas").Include("Clientes")
                 .ToList();
             }
             return listado;
