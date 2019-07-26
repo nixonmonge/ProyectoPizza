@@ -26,12 +26,11 @@ namespace Pizza
         {
             DropDownListPizza.Text = DropDownListPizza.SelectedItem.Value;
             DropDownListClientes.Text = DropDownListClientes.SelectedItem.Value;
-            TextBoxCantidad.Text = TextBoxCantidad.Text;
+
+
             var nuevoOrden = OrdenesServicio.Factory(DropDownListPizza, DropDownListClientes, TextBoxCantidad);
-
-
-            OrdenesDal.Insertar(nuevoOrden);                   
-                                     
+            OrdenesDal.Insertar(nuevoOrden);
         }
+
     }
 }

@@ -1,6 +1,7 @@
 ﻿using Pizza.Ef;
 using System;
 using System.Collections.Generic;
+using System.Data.Entity;
 using System.Linq;
 using System.Web;
 
@@ -16,7 +17,17 @@ namespace Pizza.Dal
                 nuevaOrden.SaveChanges();
             }
         }
-        
-        
+
+        public static List<Ordenes> ListarOrdenes()
+        {
+            var listado = new List<Ordenes>();
+            using (var modelo = new Model1())
+            {
+                listado = modelo.Ordenes
+                .OrderBy(e => e.Fecha).Include("Pizzas").Include("Clientes")
+                .ToList();
+            }
+            return listado;
+        }
     }
 }

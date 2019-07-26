@@ -126,6 +126,7 @@
     <Content Include="IngresoOrden.aspx" />
     <Content Include="IngresoPizza.aspx" />
     <Content Include="Web.config" />
+    <Content Include="WebOrdenesIngresadas.aspx" />
     <Content Include="WebPizzas.aspx" />
   </ItemGroup>
   <ItemGroup>
@@ -195,6 +196,13 @@
     </Compile>
     <Compile Include="WebEmpleados.aspx.designer.cs">
       <DependentUpon>WebEmpleados.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WebOrdenesIngresadas.aspx.cs">
+      <DependentUpon>WebOrdenesIngresadas.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebOrdenesIngresadas.aspx.designer.cs">
+      <DependentUpon>WebOrdenesIngresadas.aspx</DependentUpon>
     </Compile>
     <Compile Include="WebPizza.Master.cs">
       <DependentUpon>WebPizza.Master</DependentUpon>

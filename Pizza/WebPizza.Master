@@ -58,6 +58,9 @@
                         <li class="nav-item"> 
                             <asp:Button ID="ButtonIngresoOrden" runat="server" Text="Ingreso de orden" CssClass="btn btn-secondary btn-lg btn-block" OnClick="ButtonIngresoOrden_Click"/>
                        </li><br />
+                        <li class="nav-item"> 
+                            <asp:Button ID="ButtonOrdenesIngresadas" runat="server" Text="Ordenes Ingresadas" CssClass="btn btn-secondary btn-lg btn-block" OnClick="ButtonOrdenesIngresadas_Click"/>
+                       </li><br />
                         <li class="nav-item">
                             <asp:Button ID="ButtonEmpleados" runat="server" Text="Empleados" CssClass="btn btn-secondary btn-lg btn-block" OnClick="ButtonEmpleados_Click" />
                         </li><br />

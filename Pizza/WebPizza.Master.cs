@@ -23,7 +23,7 @@ namespace Pizza
             // si el usuario no esta, redireccionar a la pagina de login
             if (usuario == null)
             {
-               // Response.Redirect("default.aspx", true);
+               //Response.Redirect("default.aspx", true);
             }
             else
             {
@@ -37,6 +37,10 @@ namespace Pizza
         protected void ButtonIngresoOrden_Click(object sender, EventArgs e)
         {
             Response.Redirect("IngresoOrden.aspx");
+        }
+        protected void ButtonOrdenesIngresadas_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("WebOrdenesIngresadas.aspx");
         }
         protected void ButtonEmpleados_Click(object sender, EventArgs e)
         {
