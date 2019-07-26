@@ -23,7 +23,7 @@ namespace Pizza
             // si el usuario no esta, redireccionar a la pagina de login
             if (usuario == null)
             {
-               //Response.Redirect("default.aspx", true);
+               Response.Redirect("default.aspx", true);
             }
             else
             {

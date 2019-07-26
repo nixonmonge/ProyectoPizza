@@ -1,4 +1,5 @@
 ﻿using Pizza.Dal;
+using Pizza.Ef;
 using Pizza.ServiceDal;
 using System;
 using System.Collections.Generic;
@@ -11,6 +12,7 @@ namespace Pizza
 {
     public partial class IngresoOrden : System.Web.UI.Page
     {
+
         protected void Page_Load(object sender, EventArgs e)
         {
             if (!IsPostBack)
@@ -19,6 +21,7 @@ namespace Pizza
                 DropDownListPizza.DataBind();
                 DropDownListClientes.DataSource = ClientesDal.ListaClientesOrdenes();
                 DropDownListClientes.DataBind();
+
             }
         }
 
@@ -26,9 +29,11 @@ namespace Pizza
         {
             DropDownListPizza.Text = DropDownListPizza.SelectedItem.Value;
             DropDownListClientes.Text = DropDownListClientes.SelectedItem.Value;
+            Empleados userLogin = (Empleados)Session["usuario"];
+            object usuario = userLogin.IdUsuario;
 
 
-            var nuevoOrden = OrdenesServicio.Factory(DropDownListPizza, DropDownListClientes, TextBoxCantidad);
+            var nuevoOrden = OrdenesServicio.Factory(DropDownListPizza, DropDownListClientes, TextBoxCantidad, usuario);
             OrdenesDal.Insertar(nuevoOrden);
         }
 

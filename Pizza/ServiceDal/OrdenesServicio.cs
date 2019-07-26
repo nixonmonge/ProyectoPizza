@@ -9,13 +9,15 @@ namespace Pizza.ServiceDal
 {
     public class OrdenesServicio
     {
-        public static Ordenes Factory(DropDownList txtIdPizza, DropDownList txtRutCliente, TextBox txtCantidad)
+        public static Ordenes Factory(DropDownList txtIdPizza, DropDownList txtRutCliente, TextBox txtCantidad, object usuario)
         {
             var nuevaOrden = new Ordenes();            
             nuevaOrden.IdPizza = Convert.ToInt32(txtIdPizza.Text);
             nuevaOrden.RutCliente = txtRutCliente.Text;
             nuevaOrden.Cantidad = Convert.ToInt32(txtCantidad.Text);
             nuevaOrden.Fecha = Convert.ToDateTime(DateTime.Today);
+            nuevaOrden.IdUsuario = Convert.ToInt32(usuario);
+            
             return nuevaOrden;
 
         }
