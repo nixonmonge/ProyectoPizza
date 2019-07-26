@@ -16,7 +16,7 @@
     <asp:TextBox ID="TextBoxDireccionCliente" runat="server" CssClass="col-md-3"></asp:TextBox></h5>  <br />
 
     <h5><asp:Button ID="Button1" runat="server" Text="Ingresar cliente" OnClick="Button1_Click" /></h5><br /><br />
-    <h4><asp:Panel ID="Panel1" runat="server">Error</asp:Panel></h4>
+    <h4><asp:Panel ID="Panel1" runat="server" Visible="False">Error</asp:Panel></h4>
     <p></p>
 
 </asp:Content>
