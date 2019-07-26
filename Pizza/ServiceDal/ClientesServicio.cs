@@ -16,7 +16,6 @@ namespace Pizza.ServiceDal
             nuevoCliente.Nombre = txtNombre.Text;
             nuevoCliente.Telefono = Convert.ToInt32(txtTelefono.Text);
             nuevoCliente.Direccion = txtDireccion.Text;
-
             return nuevoCliente;
         }
     }
