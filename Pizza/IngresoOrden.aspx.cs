@@ -13,20 +13,23 @@ namespace Pizza
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            DropDownListPizza.DataSource = PizzasDal.ListaPizzasOrdenes();
-            DropDownListPizza.DataBind();
-            DropDownListClientes.DataSource = ClientesDal.ListaClientesOrdenes();
-            DropDownListClientes.DataBind();
+            if (!IsPostBack)
+            {
+                DropDownListPizza.DataSource = PizzasDal.ListaPizzasOrdenes();
+                DropDownListPizza.DataBind();
+                DropDownListClientes.DataSource = ClientesDal.ListaClientesOrdenes();
+                DropDownListClientes.DataBind();
+            }
         }
 
         protected void Button1_Click(object sender, EventArgs e)
         {
-            
-                var nuevoOrden = OrdenesServicio.Factory(DropDownListPizza, DropDownListClientes, TextBoxCantidad);
+            DropDownListPizza.Text = DropDownListPizza.SelectedItem.Value;
+            DropDownListClientes.Text = DropDownListClientes.SelectedItem.Value;
+            TextBoxCantidad.Text = TextBoxCantidad.Text;
+            var nuevoOrden = OrdenesServicio.Factory(DropDownListPizza, DropDownListClientes, TextBoxCantidad);
 
-                nuevoOrden.IdPizza = Convert.ToInt32(DropDownListPizza.SelectedValue);
-                nuevoOrden.RutCliente= DropDownListClientes.Text;
-                nuevoOrden.Cantidad = Convert.ToInt32(TextBoxCantidad.Text);
+
             OrdenesDal.Insertar(nuevoOrden);                   
                                      
         }
