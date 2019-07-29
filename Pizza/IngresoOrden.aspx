@@ -11,7 +11,7 @@
      <h5><asp:Label ID="Label4" runat="server" Text="Cantidad :"></asp:Label><br />
     <asp:TextBox ID="TextBoxCantidad" runat="server" CssClass="col-md-3"></asp:TextBox></h5>  <br />
     <h5><asp:Button ID="Button1" runat="server" Text="Ingresar orden" OnClick="Button1_Click" /></h5><br />
-    <h4><asp:Panel ID="Panel1" runat="server">Error</asp:Panel></h4>
+    <h4><asp:Panel ID="Panel1" runat="server" Visible="False">Error</asp:Panel></h4>
 
 
 </asp:Content>

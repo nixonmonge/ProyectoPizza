@@ -23,16 +23,20 @@ namespace Pizza
                 DropDownListClientes.DataBind();
 
             }
+            else
+            {
+                Panel1.DataBind();
+            }
+
         }
 
         protected void Button1_Click(object sender, EventArgs e)
         {
+            
             DropDownListPizza.Text = DropDownListPizza.SelectedItem.Value;
             DropDownListClientes.Text = DropDownListClientes.SelectedItem.Value;
             Empleados userLogin = (Empleados)Session["usuario"];
             object usuario = userLogin.IdUsuario;
-
-
             var nuevoOrden = OrdenesServicio.Factory(DropDownListPizza, DropDownListClientes, TextBoxCantidad, usuario);
             OrdenesDal.Insertar(nuevoOrden);
         }
